@@ -1,4 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ljh.process">
 
+    <application>
+        <activity android:name=".memory.ProcessMenuActivity" />
+        <activity
+            android:name=".memory.ProcessMemoryActivity"
+            android:process=":process" />
+    </application>
 </manifest>

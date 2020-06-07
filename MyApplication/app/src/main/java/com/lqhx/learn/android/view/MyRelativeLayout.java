@@ -24,16 +24,16 @@ public class MyRelativeLayout extends RelativeLayout {
     public boolean dispatchTouchEvent(MotionEvent event) {
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
-                Log.e(TAG, "dispatchTouchEvent ACTION_DOWN");
+                Log.i(TAG, "dispatchTouchEvent ACTION_DOWN");
                 break;
             case MotionEvent.ACTION_MOVE:
-                Log.e(TAG, "dispatchTouchEvent ACTION_MOVE");
+                Log.i(TAG, "dispatchTouchEvent ACTION_MOVE");
                 break;
             case MotionEvent.ACTION_CANCEL:
-                Log.e(TAG, "dispatchTouchEvent ACTION_CANCEL");
+                Log.i(TAG, "dispatchTouchEvent ACTION_CANCEL");
                 break;
             case MotionEvent.ACTION_UP:
-                Log.e(TAG, "dispatchTouchEvent ACTION_UP");
+                Log.i(TAG, "dispatchTouchEvent ACTION_UP");
                 break;
         }
         return super.dispatchTouchEvent(event);
@@ -44,16 +44,16 @@ public class MyRelativeLayout extends RelativeLayout {
     public boolean onTouchEvent(MotionEvent ev) {
         switch (ev.getAction()) {
             case MotionEvent.ACTION_DOWN:
-                Log.e(TAG, "onTouchEvent ACTION_DOWN");
+                Log.i(TAG, "onTouchEvent ACTION_DOWN");
                 break;
             case MotionEvent.ACTION_MOVE:
-                Log.e(TAG, "onTouchEvent ACTION_MOVE");
+                Log.i(TAG, "onTouchEvent ACTION_MOVE");
                 break;
             case MotionEvent.ACTION_CANCEL:
-                Log.e(TAG, "onTouchEvent ACTION_CANCEL");
+                Log.i(TAG, "onTouchEvent ACTION_CANCEL");
                 break;
             case MotionEvent.ACTION_UP:
-                Log.e(TAG, "onTouchEvent ACTION_UP");
+                Log.i(TAG, "onTouchEvent ACTION_UP");
                 break;
         }
         return super.onTouchEvent(ev);
@@ -63,16 +63,16 @@ public class MyRelativeLayout extends RelativeLayout {
     public boolean onInterceptTouchEvent(MotionEvent ev) {
         switch (ev.getAction()) {
             case MotionEvent.ACTION_DOWN:
-                Log.e(TAG, "onInterceptTouchEvent ACTION_DOWN");
+                Log.i(TAG, "onInterceptTouchEvent ACTION_DOWN");
                 break;
             case MotionEvent.ACTION_MOVE:
-                Log.e(TAG, "onInterceptTouchEvent ACTION_MOVE");
+                Log.i(TAG, "onInterceptTouchEvent ACTION_MOVE");
                 break;
             case MotionEvent.ACTION_CANCEL:
-                Log.e(TAG, "onInterceptTouchEvent ACTION_CANCEL");
+                Log.i(TAG, "onInterceptTouchEvent ACTION_CANCEL");
                 break;
             case MotionEvent.ACTION_UP:
-                Log.e(TAG, "onInterceptTouchEvent ACTION_UP");
+                Log.i(TAG, "onInterceptTouchEvent ACTION_UP");
                 break;
         }
         return super.onInterceptTouchEvent(ev);

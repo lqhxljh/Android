@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_memory">"Runtime获取App内存使用信息: 可用内存:%d 总内存%d 最大可分配最大内存:%d"</string>
-    <string name="phone_memory">"ActivityManager Rom获取到内存信息: 可用内存:%d 总内存%d 最大可支持最大内存:%d"</string>
+    <string name="app_memory">"Runtime获取App内存使用信息: 可用内存:%dM 总内存%dM 最大可分配最大内存:%dM"</string>
+    <string name="phone_memory">"ActivityManager Rom获取到内存信息: 可用内存:%dM 总内存%dM 最大可支持最大内存:%dM"</string>
     <string name="memory_info">获取内存信息</string>
+    <string name="module_process">进程</string>
+    <string name="show_application_id">当前进程ID为%d</string>
+
 </resources>

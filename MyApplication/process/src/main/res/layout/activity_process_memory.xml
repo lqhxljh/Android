@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
     tools:context="com.ljh.process.memory.ProcessMemoryActivity">
+
+    <TextView
+        android:id="@+id/tv_process_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:contentDescription="@string/app_memory" />
 
     <TextView
         android:id="@+id/tv_memory_info"
@@ -15,6 +23,7 @@
 
 
     <android.support.v7.widget.AppCompatButton
+
         android:id="@+id/btn_memory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -23,7 +32,4 @@
         android:background="@drawable/btn_memory_com"
         android:padding="@dimen/fab_margin"
         android:text="@string/memory_info" />
-
-</android.support.design.widget.CoordinatorLayout>
-
-
+</LinearLayout>

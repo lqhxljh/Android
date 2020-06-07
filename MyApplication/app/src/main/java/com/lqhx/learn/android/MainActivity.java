@@ -15,6 +15,7 @@ import android.view.MotionEvent;
 import android.view.View;
 
 import com.ljh.process.memory.ProcessMemoryActivity;
+import com.ljh.process.memory.ProcessMenuActivity;
 import com.lqhx.learn.android.view.MyFloatingActionButton;
 
 public class MainActivity extends AppCompatActivity
@@ -101,16 +102,16 @@ public class MainActivity extends AppCompatActivity
     public boolean dispatchTouchEvent(MotionEvent event) {
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
-                Log.e(TAG, "dispatchTouchEvent ACTION_DOWN");
+                Log.i(TAG, "dispatchTouchEvent ACTION_DOWN");
 //                break;
             case MotionEvent.ACTION_MOVE:
-                Log.e(TAG, "dispatchTouchEvent ACTION_MOVE");
+                Log.i(TAG, "dispatchTouchEvent ACTION_MOVE");
                 break;
             case MotionEvent.ACTION_CANCEL:
-                Log.e(TAG, "dispatchTouchEvent ACTION_CANCEL");
+                Log.i(TAG, "dispatchTouchEvent ACTION_CANCEL");
                 break;
             case MotionEvent.ACTION_UP:
-                Log.e(TAG, "dispatchTouchEvent ACTION_UP");
+                Log.i(TAG, "dispatchTouchEvent ACTION_UP");
                 break;
         }
         return super.dispatchTouchEvent(event);
@@ -120,16 +121,16 @@ public class MainActivity extends AppCompatActivity
     public boolean onTouchEvent(MotionEvent ev) {
         switch (ev.getAction()) {
             case MotionEvent.ACTION_DOWN:
-                Log.e(TAG, "onTouchEvent ACTION_DOWN");
+                Log.i(TAG, "onTouchEvent ACTION_DOWN");
                 break;
             case MotionEvent.ACTION_MOVE:
-                Log.e(TAG, "onTouchEvent ACTION_MOVE");
+                Log.i(TAG, "onTouchEvent ACTION_MOVE");
                 break;
             case MotionEvent.ACTION_CANCEL:
-                Log.e(TAG, "onTouchEvent ACTION_CANCEL");
+                Log.i(TAG, "onTouchEvent ACTION_CANCEL");
                 break;
             case MotionEvent.ACTION_UP:
-                Log.e(TAG, "onTouchEvent ACTION_UP");
+                Log.i(TAG, "onTouchEvent ACTION_UP");
                 break;
         }
         return super.onTouchEvent(ev);
@@ -138,8 +139,8 @@ public class MainActivity extends AppCompatActivity
     @Override
     public void onClick(View v) {
         if (v.getId() == R.id.fab) {
-            Log.e(TAG, "onClick ");
-            startActivity(new Intent(this, ProcessMemoryActivity.class));
+            Log.i(TAG, "onClick ");
+            startActivity(new Intent(this, ProcessMenuActivity.class));
         }
         return;
     }
@@ -148,7 +149,7 @@ public class MainActivity extends AppCompatActivity
     public boolean onTouch(View v, MotionEvent event) {
         switch (v.getId()) {
             case R.id.fab:
-                Log.e(TAG, "onTouch ");
+                Log.i(TAG, "onTouch ");
                 break;
             default:
                 break;
