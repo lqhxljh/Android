@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary_process">#3F51B5</color>
+    <color name="colorPrimaryDark_process">#303F9F</color>
+    <color name="colorAccent_process">#FF4081</color>
+</resources>

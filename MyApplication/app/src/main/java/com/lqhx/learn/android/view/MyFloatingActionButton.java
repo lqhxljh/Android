@@ -1,5 +1,6 @@
 package com.lqhx.learn.android.view;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.support.design.widget.FloatingActionButton;
 import android.util.AttributeSet;
@@ -44,6 +45,7 @@ public class MyFloatingActionButton extends FloatingActionButton {
         return super.dispatchTouchEvent(event);
     }
 
+    @SuppressLint("ClickableViewAccessibility")
     @Override
     public boolean onTouchEvent(MotionEvent ev) {
         switch (ev.getAction()) {

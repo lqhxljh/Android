@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ljh.process.memory.ProcessMemoryActivity">
+
+    <TextView
+        android:id="@+id/tv_memory_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="100dp"
+        android:textColor="@color/colorAccent_process" />
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_memory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/fab_margin"
+        android:background="@drawable/btn_memory_com"
+        android:padding="@dimen/fab_margin"
+        android:text="@string/memory_info" />
+
+</android.support.design.widget.CoordinatorLayout>
+
+

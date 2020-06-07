@@ -5,4 +5,13 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+    <string name="android_import">import</string>
+    <string name="android_allery">Gallery</string>
+    <string name="android_slideshow">Slideshow</string>
+    <string name="android_tools">Tools</string>
+    <string name="communicate">Communicate</string>
+    <string name="Share">string/android_share</string>
+    <string name="android_send">Send</string>
+    <string name="android_studio">Android Studio</string>
+    <string name="email">android.studio@android.com</string>
 </resources>

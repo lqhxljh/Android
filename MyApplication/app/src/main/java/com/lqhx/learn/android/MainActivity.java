@@ -1,8 +1,8 @@
 package com.lqhx.learn.android;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
-import android.support.design.widget.Snackbar;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -14,6 +14,7 @@ import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 
+import com.ljh.process.memory.ProcessMemoryActivity;
 import com.lqhx.learn.android.view.MyFloatingActionButton;
 
 public class MainActivity extends AppCompatActivity
@@ -29,7 +30,6 @@ public class MainActivity extends AppCompatActivity
 
         MyFloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(this);
-        fab.setOnTouchListener(this);
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -137,12 +137,9 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.fab:
-                Log.e(TAG, "onClick ");
-                break;
-            default:
-                break;
+        if (v.getId() == R.id.fab) {
+            Log.e(TAG, "onClick ");
+            startActivity(new Intent(this, ProcessMemoryActivity.class));
         }
         return;
     }

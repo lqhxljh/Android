@@ -1,1 +1,2 @@
+include ':process'
 include ':app'

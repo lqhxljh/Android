@@ -1,5 +1,6 @@
 package com.lqhx.learn.android.view;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.util.Log;
@@ -38,6 +39,7 @@ public class MyRelativeLayout extends RelativeLayout {
         return super.dispatchTouchEvent(event);
     }
 
+    @SuppressLint("ClickableViewAccessibility")
     @Override
     public boolean onTouchEvent(MotionEvent ev) {
         switch (ev.getAction()) {
